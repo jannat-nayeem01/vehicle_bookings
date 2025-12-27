@@ -3,13 +3,20 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import config from "../config";
 const auth = (...roles: string[]) => {
   return (req: Request, res: Response, next: NextFunction) => {
-    const token = req.headers.authorization;
+    const authHeader = req.headers.authorization;
 
-    // const token = authHeader.split(" ")[1];
+    if (!authHeader) {
+      return res.status(401).json({ message: "Authorization header missing" });
+    }
+
+    const token = authHeader.startsWith("Bearer ")
+      ? authHeader.split(" ")[1]
+      : authHeader;
 
     if (!token) {
       return res.status(401).json({ message: "Unauthorized!" });
     }
+
     try {
       const decoded = jwt.verify(token, config.secret as string) as JwtPayload;
       // console.log("Decoded Token:", decoded);

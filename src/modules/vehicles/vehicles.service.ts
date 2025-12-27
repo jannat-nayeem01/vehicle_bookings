@@ -1,4 +1,5 @@
 import { pool } from "../../config/db";
+import { autoReturnBookings } from "../../jobs/autoReturnBookings.job";
 
 const addVehicle = async (payload: Record<string, unknown>) => {
   const result = await pool.query(
@@ -18,6 +19,8 @@ const addVehicle = async (payload: Record<string, unknown>) => {
 };
 
 const getAllVehicles = async () => {
+  autoReturnBookings.start();
+
   const result = await pool.query(`SELECT * FROM vehicles`);
   return result.rows;
 };

@@ -39,5 +39,4 @@ app.use((req: Request, res: Response) => {
   });
 });
 
-autoReturnBookings.start();
 export default app;
