@@ -23,22 +23,22 @@ npm init -y
 
 ## Install Core Dependencies
 
-npm install express
-npm install pg
-npm install dotenv
-npm install bcrypt
-npm install jsonwebtoken
-npm install node-cron
+**npm install express**
+**npm install pg**
+**npm install dotenv**
+**npm install bcrypt**
+**npm install jsonwebtoken**
+**npm install node-cron**
 
 ## Install Development Dependencies
 
-npm install -D typescript
-npm install -D tsx
-npm install -D @types/node
-npm install -D @types/express
-npm install -D @types/pg
-npm install -D @types/bcrypt
-npm install -D @types/jsonwebtoken
+**npm install -D typescript**
+**npm install -D tsx**
+**npm install -D @types/node**
+**npm install -D @types/express**
+**npm install -D @types/pg**
+**npm install -D @types/bcrypt**
+**npm install -D @types/jsonwebtoken**
 
 ## Initialize TypeScript
 
