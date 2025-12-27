@@ -23,30 +23,42 @@ npm init -y
 
 ## Install Core Dependencies
 
-**npm install express**
-**npm install pg**
-**npm install dotenv**
-**npm install bcrypt**
-**npm install jsonwebtoken**
-**npm install node-cron**
+### Install Core Dependencies
 
-## Install Development Dependencies
+```bash
+npm install express
+npm install pg
+npm install dotenv
+npm install bcrypt
+npm install jsonwebtoken
+npm install node-cron
+```
 
-**npm install -D typescript**
-**npm install -D tsx**
-**npm install -D @types/node**
-**npm install -D @types/express**
-**npm install -D @types/pg**
-**npm install -D @types/bcrypt**
-**npm install -D @types/jsonwebtoken**
+### Install Development Dependencies
 
-## Initialize TypeScript
+```bash
+npm install -D typescript
+npm install -D tsx
+npm install -D @types/node
+npm install -D @types/express
+npm install -D @types/pg
+npm install -D @types/bcrypt
+npm install -D @types/jsonwebtoken
+```
 
-## npx tsc --init
+### Initialize TypeScript
 
-## Run TypeScript Files
+```bash
+npx tsc --init
+```
 
+### Run the Application
+
+```bash
 npx tsx watch ./src/server.ts
+```
+
+---
 
 ## Project Structure
 
