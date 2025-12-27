@@ -1,6 +1,4 @@
-ends
-
-🛠️ Technology Stack
+### 🛠️ Technology Stack
 
 Node.js
 
@@ -22,69 +20,86 @@ pg – PostgreSQL client
 
 dotenv – Environment variable management
 
-1. Initialize the Project
-   npm init -y
-2. Install Core Dependencies
-   npm install express
-   npm install pg
-   npm install dotenv
-   npm install bcrypt
-   npm install jsonwebtoken
-   npm install node-cron
+## Initialize the Project
 
-3. Install Development Dependencies
-   npm install -D typescript
-   npm install -D tsx
-   npm install -D @types/node
-   npm install -D @types/express
-   npm install -D @types/pg
-   npm install -D @types/bcrypt
-   npm install -D @types/jsonwebtoken
+npm init -y
 
-4. Initialize TypeScript
+## Install Core Dependencies
 
-5. npx tsc --init
+npm install express
+npm install pg
+npm install dotenv
+npm install bcrypt
+npm install jsonwebtoken
+npm install node-cron
 
-6. Run TypeScript Files
-   npx tsx watch ./src/server.ts
+## Install Development Dependencies
 
-7. Project Structure
-   src/
-   │
-   ├── app.ts
-   ├── server.ts
-   │
-   ├── config/
-   │ ├── db.ts
-   │ └── index.ts
-   │
-   ├── modules/
-   │ ├── auth/
-   │ │ ├── auth.routes.ts
-   │ │ ├── auth.controller.ts
-   │ │ └── auth.service.ts
-   │ │
-   │ ├── users/
-   │ │ ├── user.routes.ts
-   │ │ ├── user.controller.ts
-   │ │ └── user.service.ts
-   │ │
-   │ ├── vehicles/
-   │ │ ├── vehicle.routes.ts
-   │ │ ├── vehicle.controller.ts
-   │ │ └── vehicle.service.ts
-   │ │
-   │ └── bookings/
-   │ ├── booking.routes.ts
-   │ ├── booking.controller.ts
-   │ └── booking.service.ts
-   │
-   ├── jobs/
-   │ └── autoReturnBookings.ts
-   │
-   ├── middleware/
-   │ ├── auth.ts
-   │ └── logger.ts
-   │
-   └── types/
-   └── express.d.ts
+npm install -D typescript
+npm install -D tsx
+npm install -D @types/node
+npm install -D @types/express
+npm install -D @types/pg
+npm install -D @types/bcrypt
+npm install -D @types/jsonwebtoken
+
+## Initialize TypeScript
+
+## npx tsc --init
+
+## Run TypeScript Files
+
+npx tsx watch ./src/server.ts
+
+## 🧱 Project Structure
+
+```text
+src/
+│
+├── app.ts
+├── server.ts
+│
+├── config/
+│   ├── db.ts
+│   └── index.ts
+│
+├── modules/
+│   ├── auth/
+│   │   ├── auth.routes.ts
+│   │   ├── auth.controller.ts
+│   │   └── auth.service.ts
+│   │
+│   ├── users/
+│   │   ├── user.routes.ts
+│   │   ├── user.controller.ts
+│   │   └── user.service.ts
+│   │
+│   ├── vehicles/
+│   │   ├── vehicle.routes.ts
+│   │   ├── vehicle.controller.ts
+│   │   └── vehicle.service.ts
+│   │
+│   └── bookings/
+│       ├── booking.routes.ts
+│       ├── booking.controller.ts
+│       └── booking.service.ts
+│
+├── jobs/
+│   └── autoReturnBookings.ts
+│
+├── middleware/
+│   ├── auth.ts
+│   └── logger.ts
+│
+└── types/
+    └── express.d.ts
+```
+
+---
+
+## 🔑 Authentication & Authorization
+
+- Uses **JWT (JSON Web Tokens)**
+- Two user roles:
+  - **Admin**
+  - **Customer**
