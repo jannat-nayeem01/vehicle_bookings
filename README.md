@@ -1,24 +1,21 @@
-### 🛠️ Technology Stack
+## Overview
 
-Node.js
+This repository contains a **backend REST API** for a **Vehicle Rental Management System**, built with **Node.js, TypeScript, Express, and PostgreSQL**.
 
-TypeScript
+The system follows a **modular, feature-based architecture** with clear separation of concerns and supports **secure role-based access control** for **Admin** and **Customer** users.
 
-Express.js – Web framework
+## Technology Stack
 
-PostgreSQL – Relational database
-
-NeonDB – Cloud PostgreSQL service
-
-bcrypt – Password hashing
-
-jsonwebtoken (JWT) – Authentication & authorization
-
-node-cron – Background scheduling
-
-pg – PostgreSQL client
-
-dotenv – Environment variable management
+- **Node.js**
+- **TypeScript**
+- **Express.js** – Web framework
+- **PostgreSQL** – Relational database
+- **NeonDB** – Cloud PostgreSQL service
+- **bcrypt** – Password hashing
+- **jsonwebtoken (JWT)** – Authentication & authorization
+- **node-cron** – Background scheduling
+- **pg** – PostgreSQL client
+- **dotenv** – Environment variable management
 
 ## Initialize the Project
 
@@ -51,7 +48,7 @@ npm install -D @types/jsonwebtoken
 
 npx tsx watch ./src/server.ts
 
-## 🧱 Project Structure
+## Project Structure
 
 ```text
 src/
